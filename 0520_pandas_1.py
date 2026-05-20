@@ -22,3 +22,5 @@ print("\n缺失值檢查：")
 print(stock2.isna())
 
 print(f"\n缺失值數量： {stock2.isna().sum()}")
+
+stock2.to_csv("0520_stock.csv", header=["Stock"], index_label="Fruit")
